@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'vat_info/models/status'
 require 'vat_info/models/vat_payers'
 require 'vat_info/models/vat_payer'

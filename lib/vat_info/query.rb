@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require 'savon'
 
 module VatInfo
   class SchemaError < StandardError; end
 
   class Query
-    DOCS = 'https://adisspr.mfcr.cz/adistc/adis/idpr_pub/dpr_info/ws_spdph.faces'.freeze
-    WSDL = 'http://adisrws.mfcr.cz/adistc/axis2/services/rozhraniCRPDPH.rozhraniCRPDPHSOAP?wsdl'.freeze
+    DOCS = 'https://adisspr.mfcr.cz/adistc/adis/idpr_pub/dpr_info/ws_spdph.faces'
+    WSDL = 'https://adisrws.mfcr.cz/adistc/axis2/services/rozhraniCRPDPH.rozhraniCRPDPHSOAP?wsdl'
     TIMEOUT             = 2
     SERVICE_UNAVAILABLE = 503
     REQUEST_TIME_OUT    = 408

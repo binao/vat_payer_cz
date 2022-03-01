@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 shared_examples 'a Request' do
   let(:request) { described_class.new }
 

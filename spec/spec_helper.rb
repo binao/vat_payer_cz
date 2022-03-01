@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pry'
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
@@ -11,7 +13,7 @@ VCR.configure do |config|
   config.hook_into :webmock
 end
 
-Dir[File.join('.', '/spec/shared/**/*.rb')].each { |f| require f }
+Dir[File.join('.', '/spec/shared/**/*.rb')].sort.each { |f| require f }
 
 RSpec::Matchers.define :have_xml do |xpath, text|
   match do |body|

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://adisrws.mfcr.cz/adistc/axis2/services/rozhraniCRPDPH.rozhraniCRPDPHSOAP?wsdl
+    uri: https://adisrws.mfcr.cz/adistc/axis2/services/rozhraniCRPDPH.rozhraniCRPDPHSOAP?wsdl
     body:
       encoding: US-ASCII
       string: ''
@@ -378,7 +378,7 @@ http_interactions:
         c2VydmljZXMvcm96aHJhbmlDUlBEUEgucm96aHJhbmlDUlBEUEhTT0FQIiAv
         Pg0KICAgIDwvd3NkbDpwb3J0Pg0KICA8L3dzZGw6c2VydmljZT4NCjwvd3Nk
         bDpkZWZpbml0aW9ucz4=
-    http_version: 
+    http_version:
   recorded_at: Thu, 08 Feb 2018 11:10:53 GMT
 - request:
     method: post
@@ -423,6 +423,6 @@ http_interactions:
       string: |-
         <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><soapenv:Fault><faultcode></faultcode><faultstring>com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
          at javax.xml.stream.SerializableLocation@85f936b7</faultstring><detail /></soapenv:Fault></soapenv:Body></soapenv:Envelope>
-    http_version: 
+    http_version:
   recorded_at: Thu, 08 Feb 2018 11:10:53 GMT
 recorded_with: VCR 4.0.0

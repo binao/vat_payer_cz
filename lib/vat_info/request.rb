@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'nokogiri'
 require 'vat_info/request/unreliable_payer'
 require 'vat_info/request/unreliable_payer_extended'
@@ -5,7 +7,7 @@ require 'vat_info/request/unreliable_payer_list'
 
 module VatInfo
   class Request
-    SOAP_ENV_SCHEMA = 'http://schemas.xmlsoap.org/soap/envelope/'.freeze
+    SOAP_ENV_SCHEMA = 'http://schemas.xmlsoap.org/soap/envelope/'
 
     def envelope
       Nokogiri::XML::Builder.new('encoding' => 'UTF-8') do |xml|

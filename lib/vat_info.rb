@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'vat_info/version'
 require 'vat_info/utils'
 require 'vat_info/request'

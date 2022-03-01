@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module VatInfo
   class Request
     class UnreliablePayerList < VatInfo::Request

@@ -3,15 +3,12 @@
 inherit_from: .rubocop_todo.yml
 
 AllCops:
+  TargetRubyVersion: 2.5
   Exclude:
-    - 'db/**/*'
-    - 'node_modules/**/*'
     - 'bin/**/*'
-    - 'app/views/contacts/*.json.jbuilder'
-    - 'config/initializers/active_record_monkey_patch.rb'
   CacheRootDirectory: './tmp'
 
-Style/PredicateName:
+Naming/PredicateName:
   Exclude:
     - 'spec/support/feature_macros.rb'
 
@@ -39,13 +36,10 @@ Style/PredicateName:
 Metrics/ModuleLength:
   Max: 205
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 
 Style/EmptyMethod:
-  Enabled: false
-
-Style/WordArray:
   Enabled: false
 
 # default zarovnavani vim
@@ -53,7 +47,7 @@ Style/WordArray:
 #
 #  mail to: 'info@uol.cz',
 #   subject: "Message: #{message.name}",
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: 'ignore_implicit'
 
 # TODO vim jinak zarovnava pokud je metoda volana se zavorkou nebo bez
@@ -64,5 +58,5 @@ Layout/AlignHash:
 #
 #  create :job,
 #    title: "Ucetni"
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false

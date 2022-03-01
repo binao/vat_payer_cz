@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module VatInfo
   module Utils
     COMPANY_TYPES = ['a.s.', 's.r.o.', 'v.o.s.', 'k.s.', 'z.s.'].freeze
     SPECIAL_CHARS = [
-      %w(Á á), %w(Č č), %w(Ď ď), %w(É é), %w(Ě ě), %w(Í í), %w(Ň ń), %w(Ó ó),
-      %w(Ř ř), %w(Š š), %w(Ť ť), %w(Ú ú), %w(Ů ů), %w(Ž ž), %w(Ý ý)
+      %w[Á á], %w[Č č], %w[Ď ď], %w[É é], %w[Ě ě], %w[Í í], %w[Ň ń], %w[Ó ó],
+      %w[Ř ř], %w[Š š], %w[Ť ť], %w[Ú ú], %w[Ů ů], %w[Ž ž], %w[Ý ý]
     ].freeze
 
     def self.wrap_in_array(content)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module VatInfo
   class Response
     attr_accessor :status_code, :body, :raw
